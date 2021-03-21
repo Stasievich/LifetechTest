@@ -14,6 +14,7 @@ class ProductDetailsViewController: UIViewController {
     var productDetailsViewModel: ProductDetailsViewModel!
     
     var productId = String()
+    var imageName = String()
     var productImage = UIImageView()
     var productName = UILabel()
     var productPrice = UILabel()
@@ -114,13 +115,14 @@ class ProductDetailsViewController: UIViewController {
         self.productDetailsViewModel.bindProductDetailsViewModelToController = {
             self.updateDataSource()
         }
+        self.productImage.image = ImageCache.shared.imageDictionary[self.imageName]
     }
     
     func updateDataSource() {
         DispatchQueue.main.async {
+            
             if let productDetails = self.productDetailsViewModel.productDetailsData {
                 
-                self.productImage.image = ImageCache.shared.imageDictionary[productDetails.name]
                 self.productName.text = productDetails.name
                 self.productDescription.text = productDetails.description
             }

@@ -129,7 +129,9 @@ extension ProductCollectionViewController: UICollectionViewDataSource {
 extension ProductCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let productDetailsVC = ProductDetailsViewController()
-        productDetailsVC.productId = productViewModel.productsData.products[indexPath.row].product_id
+        let product = productViewModel.productsData.products[indexPath.row]
+        productDetailsVC.productId = product.product_id
+        productDetailsVC.imageName = product.name
         navigationController?.pushViewController(productDetailsVC, animated: true)
     }
     

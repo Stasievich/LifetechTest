@@ -70,7 +70,8 @@ class ProductDetailsViewModel: NSObject {
                        let name = product.name,
                        let image = product.image,
                        let description = product.productDescription {
-                        let newProduct = ProductDetails(product_id: id as String, name: name as String, price: Int(product.price as Int64), image: image as String, description: description as String)
+                        let newProduct = ProductDetails(product_id: id, name: name, price: Int(product.price),
+                                                        image: image, description: description)
                         self.productDetailsData = newProduct
                     }
                     break

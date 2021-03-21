@@ -100,7 +100,8 @@ class ProductsViewModel: NSObject {
                 if let id = product.product_id,
                    let name = product.name,
                    let image = product.image {
-                    let newProduct = Product(product_id: id as String, name: name as String, price: Int(product.price as Int64), image: image as String)
+                    let newProduct = Product(product_id: id, name: name,
+                                             price: Int(product.price), image: image)
                     cachedProducts.products.append(newProduct)
                 }
             }
