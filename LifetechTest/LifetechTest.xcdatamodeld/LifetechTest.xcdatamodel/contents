@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ProductData" representedClassName="ProductData" syncable="YES">
+        <attribute name="image" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_id" attributeType="String"/>
+        <relationship name="productDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductDetailsData" inverseName="product" inverseEntity="ProductDetailsData"/>
+    </entity>
+    <entity name="ProductDetailsData" representedClassName="ProductDetailsData" syncable="YES">
+        <attribute name="image" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_id" attributeType="String"/>
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductData" inverseName="productDetails" inverseEntity="ProductData"/>
+    </entity>
+    <elements>
+        <element name="ProductData" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="ProductDetailsData" positionX="219.2103271484375" positionY="-70.64462280273438" width="128" height="133"/>
+    </elements>
 </model>

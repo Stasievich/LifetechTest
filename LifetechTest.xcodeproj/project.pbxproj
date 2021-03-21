@@ -9,27 +9,87 @@
 /* Begin PBXBuildFile section */
 		572259A62603403900AF6969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259A52603403900AF6969 /* AppDelegate.swift */; };
 		572259A82603403900AF6969 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259A72603403900AF6969 /* SceneDelegate.swift */; };
-		572259AA2603403900AF6969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259A92603403900AF6969 /* ViewController.swift */; };
-		572259AD2603403900AF6969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572259AB2603403900AF6969 /* Main.storyboard */; };
+		572259AA2603403900AF6969 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259A92603403900AF6969 /* ProductCollectionViewController.swift */; };
 		572259B02603403900AF6969 /* LifetechTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572259AE2603403900AF6969 /* LifetechTest.xcdatamodeld */; };
 		572259B22603403C00AF6969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572259B12603403C00AF6969 /* Assets.xcassets */; };
-		572259B52603403C00AF6969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572259B32603403C00AF6969 /* LaunchScreen.storyboard */; };
+		572259BE260342E500AF6969 /* ProductDecodableStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259BD260342E500AF6969 /* ProductDecodableStructs.swift */; };
+		572259C12603477600AF6969 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259C02603477600AF6969 /* ProductsViewModel.swift */; };
+		572259C52603493900AF6969 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259C42603493900AF6969 /* APIService.swift */; };
+		572259C82603520B00AF6969 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259C72603520B00AF6969 /* UIViewExtension.swift */; };
+		572259D02603B6F300AF6969 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259CF2603B6F300AF6969 /* ProductDetailsViewController.swift */; };
+		572259D72603C0D600AF6969 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259D62603C0D600AF6969 /* ProductDetailsViewModel.swift */; };
+		572259EC2604DDDC00AF6969 /* ProductDetailsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259E82604DDDC00AF6969 /* ProductDetailsData+CoreDataClass.swift */; };
+		572259ED2604DDDC00AF6969 /* ProductDetailsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259E92604DDDC00AF6969 /* ProductDetailsData+CoreDataProperties.swift */; };
+		572259EE2604DDDC00AF6969 /* ProductData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259EA2604DDDC00AF6969 /* ProductData+CoreDataClass.swift */; };
+		572259EF2604DDDC00AF6969 /* ProductData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259EB2604DDDC00AF6969 /* ProductData+CoreDataProperties.swift */; };
+		572259F52604F7DA00AF6969 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259F42604F7DA00AF6969 /* Reachability.swift */; };
+		572259FA26061D1300AF6969 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259F926061D1300AF6969 /* UIImageExtension.swift */; };
+		572259FD260673E900AF6969 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572259FC260673E900AF6969 /* ImageCache.swift */; };
+		57225A0126075BA800AF6969 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57225A0026075BA800AF6969 /* ProductsCollectionViewCell.swift */; };
+		57225A182607A31800AF6969 /* LifetechTestSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57225A172607A31800AF6969 /* LifetechTestSlowTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57225A1A2607A31800AF6969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5722599A2603403900AF6969 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572259A12603403900AF6969;
+			remoteInfo = LifetechTest;
+		};
+		57225A2A2607A73300AF6969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5722599A2603403900AF6969 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572259A12603403900AF6969;
+			remoteInfo = LifetechTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		572259A22603403900AF6969 /* LifetechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifetechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572259A52603403900AF6969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572259A72603403900AF6969 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		572259A92603403900AF6969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		572259AC2603403900AF6969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		572259A92603403900AF6969 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
 		572259AF2603403900AF6969 /* LifetechTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifetechTest.xcdatamodel; sourceTree = "<group>"; };
 		572259B12603403C00AF6969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		572259B42603403C00AF6969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572259B62603403C00AF6969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572259BD260342E500AF6969 /* ProductDecodableStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDecodableStructs.swift; sourceTree = "<group>"; };
+		572259C02603477600AF6969 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		572259C42603493900AF6969 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		572259C72603520B00AF6969 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		572259CF2603B6F300AF6969 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		572259D62603C0D600AF6969 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		572259E82604DDDC00AF6969 /* ProductDetailsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductDetailsData+CoreDataClass.swift"; path = "LifetechTest/ProductDetailsData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		572259E92604DDDC00AF6969 /* ProductDetailsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductDetailsData+CoreDataProperties.swift"; path = "LifetechTest/ProductDetailsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		572259EA2604DDDC00AF6969 /* ProductData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductData+CoreDataClass.swift"; path = "LifetechTest/ProductData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		572259EB2604DDDC00AF6969 /* ProductData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductData+CoreDataProperties.swift"; path = "LifetechTest/ProductData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		572259F42604F7DA00AF6969 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		572259F926061D1300AF6969 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		572259FC260673E900AF6969 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		57225A0026075BA800AF6969 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		57225A152607A31800AF6969 /* LifetechTestSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifetechTestSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57225A172607A31800AF6969 /* LifetechTestSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifetechTestSlowTests.swift; sourceTree = "<group>"; };
+		57225A192607A31800AF6969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57225A252607A73300AF6969 /* LifetechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifetechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5722599F2603403900AF6969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A122607A31800AF6969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A222607A73300AF6969 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +102,12 @@
 		572259992603403900AF6969 = {
 			isa = PBXGroup;
 			children = (
+				572259EA2604DDDC00AF6969 /* ProductData+CoreDataClass.swift */,
+				572259EB2604DDDC00AF6969 /* ProductData+CoreDataProperties.swift */,
+				572259E82604DDDC00AF6969 /* ProductDetailsData+CoreDataClass.swift */,
+				572259E92604DDDC00AF6969 /* ProductDetailsData+CoreDataProperties.swift */,
 				572259A42603403900AF6969 /* LifetechTest */,
+				57225A162607A31800AF6969 /* LifetechTestSlowTests */,
 				572259A32603403900AF6969 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				572259A22603403900AF6969 /* LifetechTest.app */,
+				57225A152607A31800AF6969 /* LifetechTestSlowTests.xctest */,
+				57225A252607A73300AF6969 /* LifetechTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +125,65 @@
 		572259A42603403900AF6969 /* LifetechTest */ = {
 			isa = PBXGroup;
 			children = (
-				572259A52603403900AF6969 /* AppDelegate.swift */,
-				572259A72603403900AF6969 /* SceneDelegate.swift */,
-				572259A92603403900AF6969 /* ViewController.swift */,
-				572259AB2603403900AF6969 /* Main.storyboard */,
-				572259B12603403C00AF6969 /* Assets.xcassets */,
-				572259B32603403C00AF6969 /* LaunchScreen.storyboard */,
 				572259B62603403C00AF6969 /* Info.plist */,
+				572259A52603403900AF6969 /* AppDelegate.swift */,
+				572259FC260673E900AF6969 /* ImageCache.swift */,
+				57225A0026075BA800AF6969 /* ProductsCollectionViewCell.swift */,
+				572259F42604F7DA00AF6969 /* Reachability.swift */,
+				572259A72603403900AF6969 /* SceneDelegate.swift */,
+				572259B12603403C00AF6969 /* Assets.xcassets */,
+				572259F22604F56E00AF6969 /* APIService */,
 				572259AE2603403900AF6969 /* LifetechTest.xcdatamodeld */,
+				572259D42603BB7800AF6969 /* UIExtensions */,
+				572259D22603B75500AF6969 /* ViewControllers */,
+				572259D92603C0DD00AF6969 /* ViewModels */,
 			);
 			path = LifetechTest;
+			sourceTree = "<group>";
+		};
+		572259D22603B75500AF6969 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				572259A92603403900AF6969 /* ProductCollectionViewController.swift */,
+				572259CF2603B6F300AF6969 /* ProductDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		572259D42603BB7800AF6969 /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				572259C72603520B00AF6969 /* UIViewExtension.swift */,
+				572259F926061D1300AF6969 /* UIImageExtension.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		572259D92603C0DD00AF6969 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				572259C02603477600AF6969 /* ProductsViewModel.swift */,
+				572259D62603C0D600AF6969 /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		572259F22604F56E00AF6969 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				572259BD260342E500AF6969 /* ProductDecodableStructs.swift */,
+				572259C42603493900AF6969 /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		57225A162607A31800AF6969 /* LifetechTestSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				57225A172607A31800AF6969 /* LifetechTestSlowTests.swift */,
+				57225A192607A31800AF6969 /* Info.plist */,
+			);
+			path = LifetechTestSlowTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +206,42 @@
 			productReference = 572259A22603403900AF6969 /* LifetechTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		57225A142607A31800AF6969 /* LifetechTestSlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57225A1E2607A31800AF6969 /* Build configuration list for PBXNativeTarget "LifetechTestSlowTests" */;
+			buildPhases = (
+				57225A112607A31800AF6969 /* Sources */,
+				57225A122607A31800AF6969 /* Frameworks */,
+				57225A132607A31800AF6969 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57225A1B2607A31800AF6969 /* PBXTargetDependency */,
+			);
+			name = LifetechTestSlowTests;
+			productName = LifetechTestSlowTests;
+			productReference = 57225A152607A31800AF6969 /* LifetechTestSlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57225A242607A73300AF6969 /* LifetechTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57225A2C2607A73300AF6969 /* Build configuration list for PBXNativeTarget "LifetechTestTests" */;
+			buildPhases = (
+				57225A212607A73300AF6969 /* Sources */,
+				57225A222607A73300AF6969 /* Frameworks */,
+				57225A232607A73300AF6969 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57225A2B2607A73300AF6969 /* PBXTargetDependency */,
+			);
+			name = LifetechTestTests;
+			productName = LifetechTestTests;
+			productReference = 57225A252607A73300AF6969 /* LifetechTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +253,14 @@
 				TargetAttributes = {
 					572259A12603403900AF6969 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					57225A142607A31800AF6969 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 572259A12603403900AF6969;
+					};
+					57225A242607A73300AF6969 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 572259A12603403900AF6969;
 					};
 				};
 			};
@@ -118,6 +278,8 @@
 			projectRoot = "";
 			targets = (
 				572259A12603403900AF6969 /* LifetechTest */,
+				57225A142607A31800AF6969 /* LifetechTestSlowTests */,
+				57225A242607A73300AF6969 /* LifetechTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,9 +289,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572259B52603403C00AF6969 /* LaunchScreen.storyboard in Resources */,
 				572259B22603403C00AF6969 /* Assets.xcassets in Resources */,
-				572259AD2603403900AF6969 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A132607A31800AF6969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A232607A73300AF6969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,33 +314,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572259AA2603403900AF6969 /* ViewController.swift in Sources */,
+				572259AA2603403900AF6969 /* ProductCollectionViewController.swift in Sources */,
+				57225A0126075BA800AF6969 /* ProductsCollectionViewCell.swift in Sources */,
+				572259ED2604DDDC00AF6969 /* ProductDetailsData+CoreDataProperties.swift in Sources */,
+				572259FA26061D1300AF6969 /* UIImageExtension.swift in Sources */,
+				572259C52603493900AF6969 /* APIService.swift in Sources */,
 				572259B02603403900AF6969 /* LifetechTest.xcdatamodeld in Sources */,
+				572259D02603B6F300AF6969 /* ProductDetailsViewController.swift in Sources */,
+				572259C12603477600AF6969 /* ProductsViewModel.swift in Sources */,
+				572259BE260342E500AF6969 /* ProductDecodableStructs.swift in Sources */,
+				572259EE2604DDDC00AF6969 /* ProductData+CoreDataClass.swift in Sources */,
+				572259EC2604DDDC00AF6969 /* ProductDetailsData+CoreDataClass.swift in Sources */,
+				572259D72603C0D600AF6969 /* ProductDetailsViewModel.swift in Sources */,
+				572259FD260673E900AF6969 /* ImageCache.swift in Sources */,
 				572259A62603403900AF6969 /* AppDelegate.swift in Sources */,
+				572259C82603520B00AF6969 /* UIViewExtension.swift in Sources */,
 				572259A82603403900AF6969 /* SceneDelegate.swift in Sources */,
+				572259F52604F7DA00AF6969 /* Reachability.swift in Sources */,
+				572259EF2604DDDC00AF6969 /* ProductData+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A112607A31800AF6969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57225A182607A31800AF6969 /* LifetechTestSlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57225A212607A73300AF6969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		572259AB2603403900AF6969 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				572259AC2603403900AF6969 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		57225A1B2607A31800AF6969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572259A12603403900AF6969 /* LifetechTest */;
+			targetProxy = 57225A1A2607A31800AF6969 /* PBXContainerItemProxy */;
 		};
-		572259B32603403C00AF6969 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				572259B42603403C00AF6969 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+		57225A2B2607A73300AF6969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572259A12603403900AF6969 /* LifetechTest */;
+			targetProxy = 57225A2A2607A73300AF6969 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		572259B72603403C00AF6969 /* Debug */ = {
@@ -224,6 +421,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -278,6 +476,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -321,6 +520,82 @@
 			};
 			name = Release;
 		};
+		57225A1C2607A31800AF6969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifetechTestSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = v.LifetechTestSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifetechTest.app/LifetechTest";
+			};
+			name = Debug;
+		};
+		57225A1D2607A31800AF6969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifetechTestSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = v.LifetechTestSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifetechTest.app/LifetechTest";
+			};
+			name = Release;
+		};
+		57225A2D2607A73300AF6969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifetechTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = v.LifetechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifetechTest.app/LifetechTest";
+			};
+			name = Debug;
+		};
+		57225A2E2607A73300AF6969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifetechTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = v.LifetechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifetechTest.app/LifetechTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +613,24 @@
 			buildConfigurations = (
 				572259BA2603403C00AF6969 /* Debug */,
 				572259BB2603403C00AF6969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57225A1E2607A31800AF6969 /* Build configuration list for PBXNativeTarget "LifetechTestSlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57225A1C2607A31800AF6969 /* Debug */,
+				57225A1D2607A31800AF6969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57225A2C2607A73300AF6969 /* Build configuration list for PBXNativeTarget "LifetechTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57225A2D2607A73300AF6969 /* Debug */,
+				57225A2E2607A73300AF6969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
